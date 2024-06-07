@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(29,253,251,1) 50%, rgba(155,217,249,1) 100%);
+    font-family: Verdana, serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picture {
+    flex: 1;
+}
+
+.form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.dog_pic{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.form-content{
+    width: 100%;
+}
+
+.data{
+    padding: 20px;
+    text-align: center;
+}
+
+.input-data{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.valid{
+   border-bottom: 1px solid #07e736;
+}
+
+.invalid{
+    border-bottom: 1px solid #ec4646;
+}
+
+.error_msg{
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: inherit;
+    text-align: center;
+}
+
+::placeholder {
+   text-align: center;
+    color: rgb(147, 189, 199);
+}
+
+button{
+    width: 100%;
+    font-family: Verdana, serif;
+    background: linear-gradient(90deg, rgba(29,253,251,1), rgb(96, 197, 255));
+    border: 0;
+    border-radius: 25px;
+    padding: 19px 24px;
+    font-size: inherit;
+    color: #2a2a2a;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgb(96, 197, 255), rgba(29,253,251,1));
+    color: ghostwhite;
+}
+

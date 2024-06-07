@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="picture">
+            <img src="/static/img/Kira.jpg" class="dog_pic">
+        </div>
+
+        <div class="form">
+            <div class="form-content">
+                <form method="post" onsubmit="return false">
+                    {% csrf_token %}
+                    <div class="data">
+                        <label for="puppy">current puppy weight:</label><br><br>
+                        <div class="input-data"><input type="text" name="puppy_weight" placeholder="e.g. 5"
+                                                       id="puppy">kg
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <label for="adult">expected adult dog weight:</label><br><br>
+                        <div class="input-data"><input type="text" name="adult_weight" placeholder="e.g. 20"
+                                                       id="adult">kg
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <button type="submit" value="send" name="calculate">C A L C U L A T E</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div class="data" id="result">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+{% block script %}
+<script src="/static/js/script.js"></script>
+{% endblock %}
+
+{% endblock content %}
